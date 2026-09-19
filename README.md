@@ -35,6 +35,17 @@ sonos stations rm p5
 
 `--ip`, `--config FILE`, and `--json` work on every command. `SONOS_IP` and `SONOS_STATIONS` override the defaults.
 
+## Desktop shortcut (macOS)
+
+`scripts/play-radio-paradise.command` starts Radio Paradise on the Synfonisk. Double-click it in Finder (or a copy on the Desktop).
+
+```bash
+chmod +x scripts/play-radio-paradise.command
+cp scripts/play-radio-paradise.command ~/Desktop/Radio\ Paradise.command
+```
+
+The first time, macOS may ask you to allow Terminal to run the file. After that it plays the `rp` station and shows a notification. The script uses the project `.venv` and `stations.yaml`, so keep those in place (or edit the paths inside the `.command` if you move the repo).
+
 ## Stations file
 
 YAML or JSON. The key is the CLI shorthand:
