@@ -2,9 +2,9 @@
 
 CLI for a Synfonisk (Sonos) speaker: see what is playing, switch radio streams, and keep shorthand station names in a YAML or JSON file.
 
-Default speaker: `192.168.4.48`
-
 ## Install
+
+Set the IP address of your speaker in an environment variable `ENV_SPEAKER_IP` or change the default address in `sonos_control/config.py` by updating the variable `DEFAULT_SPEAKER_IP`.
 
 ```bash
 python3 -m venv .venv

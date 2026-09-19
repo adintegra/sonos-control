@@ -2,7 +2,7 @@
 # Double-click from Finder to play Radio Paradise on the Synfonisk.
 set -euo pipefail
 
-ROOT="/Users/mark/Documents/Development/_Repositories/Adintegra/sonos-control"
+ROOT="/Users/path/to/sonos-control"
 SONOS="$ROOT/.venv/bin/sonos"
 CONFIG="$ROOT/stations.yaml"
 
