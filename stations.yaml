@@ -1,0 +1,45 @@
+# Shorthand radio stations for:  sonos play p3
+# Edit this file, or manage it with:  sonos stations add|rm
+
+speaker: 192.168.4.48
+
+stations:
+  p1:
+    name: DR P1
+    url: http://live-icy.gslb01.dr.dk/A/A03H.mp3
+  p3:
+    name: DR P3
+    url: http://live-icy.gslb01.dr.dk/A/A05H.mp3
+  p4:
+    name: DR P4 København
+    url: http://live-icy.gslb01.dr.dk/A/A08H.mp3
+  6music:
+    name: BBC Radio 6 Music
+    url: x-sonosapi-stream:s44491?sid=254&flags=8224&sn=0
+  ticino:
+    name: Radio Ticino
+    url: https://streaming.smartradio.ch/proxy/direttahq/stream
+  rprock:
+    name: Radio Paradise Rock Mix
+    url: https://stream.radioparadise.com/rock-192
+  rp:
+    name: Radio Paradise
+    url: https://stream.radioparadise.com/mp3-192
+  socal:
+    name: Radio SoCal 88.9
+    url: http://kxlu.streamguys1.com/kxlu-hi
+  socalsound:
+    name: The SoCal Sound
+    url: https://stream.thesocalsound.org/1
+  kexp:
+    name: KEXP 90.3
+    url: https://kexp-mp3-128.streamguys1.com/kexp128.mp3
+  fip:
+    name: FIP
+    url: https://icecast.radiofrance.fr/fip-midfi.mp3
+  salad:
+    name: SomaFM Groove Salad
+    url: https://ice1.somafm.com/groovesalad-256-mp3
+  jazz:
+    name: Jazz24
+    url: https://knkx-live-a.edge.audiocdn.com/6285_128k

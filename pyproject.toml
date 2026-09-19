@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sonos-control"
+version = "0.1.0"
+description = "CLI to check and change the radio stream on a Synfonisk/Sonos speaker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adintegra" }]
+dependencies = [
+    "soco>=0.31.2",
+    "pyyaml>=6.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+sonos = "sonos_control.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sonos_control"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
