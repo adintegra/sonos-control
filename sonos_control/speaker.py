@@ -57,10 +57,13 @@ class Speaker:
 
     def play_uri(self, uri: str, title: str = "") -> None:
         def play() -> None:
+            # TuneIn/Sonos service URIs must keep their native prefix.
+            # force_radio rewrites them to x-rincon-mp3radio: and the speaker rejects that.
+            native = uri.lower().startswith(("x-sonosapi-", "x-sonos-", "x-rincon-"))
             self.device.play_uri(
                 uri,
                 title=title,
-                force_radio=True,
+                force_radio=not native,
                 timeout=self.timeout,
             )
 
